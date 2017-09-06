@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmc-88-kA8">
+                                <rect key="frame" x="87" y="86" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wNl-sW-aih"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-cS-rzN">
+                                <rect key="frame" x="87" y="188" width="200" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGR-fG-l70">
+                                <rect key="frame" x="59" y="307" width="256" height="68"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Quiero una hamburguesa!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cambiarElementos" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgE-Sm-avG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iGR-fG-l70" secondAttribute="bottom" constant="292" id="6Wb-ql-sk3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wxb-cS-rzN" secondAttribute="bottom" constant="429" id="C4D-VJ-QbE"/>
+                            <constraint firstItem="iGR-fG-l70" firstAttribute="top" secondItem="Wxb-cS-rzN" secondAttribute="bottom" constant="69" id="E9b-34-RzD"/>
+                            <constraint firstItem="iGR-fG-l70" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="43" id="F3w-ZH-5dd"/>
+                            <constraint firstItem="Wxb-cS-rzN" firstAttribute="leading" secondItem="Jmc-88-kA8" secondAttribute="leading" id="FWa-cQ-srB"/>
+                            <constraint firstItem="Jmc-88-kA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MuK-QH-Jap"/>
+                            <constraint firstItem="Jmc-88-kA8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="fzj-6B-GBE"/>
+                            <constraint firstItem="Wxb-cS-rzN" firstAttribute="top" secondItem="Jmc-88-kA8" secondAttribute="bottom" constant="52" id="kaG-Zn-4mE"/>
+                            <constraint firstItem="Jmc-88-kA8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="oAC-T0-c49"/>
+                            <constraint firstItem="Wxb-cS-rzN" firstAttribute="trailing" secondItem="Jmc-88-kA8" secondAttribute="trailing" id="p0u-Bq-fca"/>
+                            <constraint firstItem="iGR-fG-l70" firstAttribute="centerX" secondItem="Wxb-cS-rzN" secondAttribute="centerX" id="rhL-Ra-l9P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etiquetaHamburguesa" destination="Wxb-cS-rzN" id="mB2-fS-JnS"/>
+                        <outlet property="etiquetaPais" destination="Jmc-88-kA8" id="lro-0f-3EP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
